@@ -14,6 +14,15 @@ function submitInputField() {
   console.log("Title: ", titleInput);
   let annualSalaryInput = $(`#annualSalary`).val();
   console.log("Annual Salary: ", annualSalaryInput);
+  $("#salaryCalculatorTable").append(`
+        <tr>
+            <td>${firstName}</td>
+            <td>${lastName}</td>
+            <td>${identification}</td>
+            <td>${title}</td>
+            <td>${annualSalary}</td>
+        </tr>
+    `);
   $(`#firstName`).val(``);
   $(`#lastName`).val(``);
   $(`#identification`).val(``);
