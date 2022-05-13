@@ -4,23 +4,23 @@ function onReady() {
 }
 function submitInputField() {
   let firstNameInput = $(`#firstName`).val();
-  console.log("First Name: ", firstNameInput);
+  console.log(`First Name: `, firstNameInput);
   //tests that this submits to the console
   let lastNameInput = $(`#lastName`).val();
-  console.log("Last Name: ", lastNameInput);
+  console.log(`Last Name: `, lastNameInput);
   let idInput = $(`#identification`).val();
-  console.log("ID: ", idInput);
+  console.log(`ID: `, idInput);
   let titleInput = $(`#title`).val();
-  console.log("Title: ", titleInput);
+  console.log(`Title: `, titleInput);
   let annualSalaryInput = $(`#annualSalary`).val();
-  console.log("Annual Salary: ", annualSalaryInput);
-  $("#salaryCalculatorTable").append(`
+  console.log(`Annual Salary: `, annualSalaryInput);
+  $(`.salaryCalculatorTable`).append(`
         <tr>
-            <td>${firstName}</td>
-            <td>${lastName}</td>
-            <td>${identification}</td>
-            <td>${title}</td>
-            <td>${annualSalary}</td>
+            <td>${firstNameInput}</td>
+            <td>${lastNameInput}</td>
+            <td>${idInput}</td>
+            <td>${titleInput}</td>
+            <td>${annualSalaryInput}</td>
         </tr>
     `);
   $(`#firstName`).val(``);
