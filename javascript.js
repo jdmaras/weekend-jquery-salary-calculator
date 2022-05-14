@@ -1,6 +1,10 @@
 $(document).ready(onReady);
+
+let initalAmount = 0;
+
 function onReady() {
   $(document).on("click", "#submitButton", submitInputField);
+  $(document).on(`click`, `.deleteButton`, clickOnDelete);
 }
 function submitInputField() {
   let firstNameInput = $(`#firstName`).val();
@@ -21,13 +25,29 @@ function submitInputField() {
             <td>${idInput}</td>
             <td>${titleInput}</td>
             <td>${annualSalaryInput}</td>
+            <td><button class="deleteButton">Delete</button></td>
         </tr>
     `);
+
+  annualSalaryAdder();
+
   $(`#firstName`).val(``);
   $(`#lastName`).val(``);
   $(`#identification`).val(``);
   $(`#title`).val(``);
   $(`#annualSalary`).val(``);
+}
+function clickOnDelete() {
+  console.log(`Is Delete Button Connected?`);
+  //$(this).parents(`tr`).remove();
+  $(this).parents(`tr`).remove();
+}
+
+function annualSalaryAdder() {
+  let individualSalaryTotal = $(`#annualSalary`).val();
+  initalAmount += Number(individualSalaryTotal);
+  //Why must I put Number in front and why isn't it green?
+  console.log("Total Equals: ", initalAmount);
 }
 
 //boarder-collapse: collapse; - look into those

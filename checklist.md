@@ -1,12 +1,12 @@
-[ ] - Input Form with Employees - First Name, Last NAME, ID NUMBER, job title, and annual salary
+[x] - Input Form with Employees - First Name, Last NAME, ID NUMBER, job title, and annual salary
 
-[ ] - Submit button - Create it
+[x] - Submit button - Create it
 
-[ ] - Submit button - should collect and store all the entered info
+[x] - Submit button - should collect and store all the entered info
 
 [ ] - Submit button - calculate monthly costs
 
-[ ] - Submit button - append info to DOM
+[x] - Submit button - append info to DOM
 
 [ ]- If monthly costs exceed 20k, add a red background color
 
