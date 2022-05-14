@@ -1,6 +1,6 @@
 $(document).ready(onReady);
 
-let initalAmount = 0;
+let initalAmount = 138000;
 
 function onReady() {
   $(document).on("click", "#submitButton", submitInputField);
@@ -39,7 +39,6 @@ function submitInputField() {
 }
 function clickOnDelete() {
   console.log(`Is Delete Button Connected?`);
-  //$(this).parents(`tr`).remove();
   $(this).parents(`tr`).remove();
 }
 
@@ -47,7 +46,8 @@ function annualSalaryAdder() {
   let individualSalaryTotal = $(`#annualSalary`).val();
   initalAmount += Number(individualSalaryTotal);
   //Why must I put Number in front and why isn't it green?
-  console.log("Total Equals: ", initalAmount);
+  $(`#totalMath`).append((initalAmount / 12).toFixed(2));
+  //.toFixed(2) rounds it to 2 decimals for some CENTS
 }
 
 //boarder-collapse: collapse; - look into those

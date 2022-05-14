@@ -4,7 +4,7 @@
 
 [x] - Submit button - should collect and store all the entered info
 
-[ ] - Submit button - calculate monthly costs
+[x] - Submit button - calculate monthly costs
 
 [x] - Submit button - append info to DOM
 
