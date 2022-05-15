@@ -44,13 +44,13 @@ function clickOnDelete() {
 
 function annualSalaryAdder() {
   let individualSalaryTotal = $(`#annualSalary`).val();
-  initalAmount += Number(individualSalaryTotal);
+  let totalMoney = (initalAmount += Number(individualSalaryTotal));
   //Why must I put Number in front and why isn't it green?
   $(`#totalMath`)
     .empty()
     .append((initalAmount / 12).toFixed(2));
   //chaining empty and append so that it empties the value before appending
-  if (individualSalaryTotal > 20000) {
+  if (totalMoney > 20000) {
     $(`#totalMath`).addClass(`overLimitRed`);
   } else {
     $(`#totalMath`).removeClass(`overLimitRed`);

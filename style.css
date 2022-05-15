@@ -18,17 +18,22 @@
 }
 .topRowHeader {
     background-color: grey;
+    
 }
 
-th, tr {
-    border: 1px solid;
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    
 }
 th {
     background-color: grey;
 }
 .salaryCalculatorTable {
     width: 90%;
-    border: 1px solid;
+    min-width: 60px;
+    text-align: left;
+    
 }
 
 .employeeHeader{
@@ -36,10 +41,11 @@ th {
 }
 
 .totalMonthly {
-float:right;
+    float:right;
 }
 
 .deleteButton {
+    
     border-radius: 5px;
     padding-left: 15px;
     padding-right: 15px;
