@@ -8,7 +8,7 @@
 
 [x] - Submit button - append info to DOM
 
-[ ]- If monthly costs exceed 20k, add a red background color
+[x ]- If monthly costs exceed 20k, add a red background color
 
 [x] - Delete button that removes an employee from Dom
 (Does Not need to remove employee's salary from reported total)

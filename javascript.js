@@ -57,8 +57,4 @@ function annualSalaryAdder() {
   }
   //.toFixed(2) rounds it to first 2 decimals
 }
-
-//boarder-collapse: collapse; - look into those
-// th, td{
-//   border: 1px, solid; - look into those
 console.log("Funyons Are Gross");

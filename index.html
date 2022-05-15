@@ -9,24 +9,31 @@
     <script src="jquery-3.6.0.min.js"></script>
     <script src="javascript.js"></script>
   </head>
-  <body>
-    <h1>SALARY CALCULATOR</h1>
+  <body><div class="wholePageBox">
+    <div class="topHeader">
+      <h1>Salary Calculator</h1>
+    </div>
+
     <h3>Add Employee</h3>
-    <input id="firstName" type="text" placeholder="First Name" />
-    <input id="lastName" type="text" placeholder="Last Name" />
-    <input id="identification" type="text" placeholder="ID" />
-    <input id="title" type="text" placeholder="Title" />
-    <input id="annualSalary" type="text" placeholder="Annual Salary" />
-    <button id="submitButton">Submit Button</button>
-    <h3>Employees</h3>
+    <div class="inputFieldBox">
+      <input id="firstName" type="text" placeholder="First Name" />
+      <input id="lastName" type="text" placeholder="Last Name" />
+      <input id="identification" type="text" placeholder="ID" />
+      <input id="title" type="text" placeholder="Title" />
+      <input id="annualSalary" type="text" placeholder="Annual Salary" />
+    </div>
+    <button id="submitButton">Submit</button>
+    <h3 class="employeeHeader">Employees</h3>
     <table class="salaryCalculatorTable">
+      <div class="topRowHeader">
       <tr>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>ID</th>
-        <th>Title</th>
-        <th>Annual Salary</th>
-        <th></th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>ID</th>
+          <th>Title</th>
+          <th>Annual Salary</th>
+          <th></th>
+        </div>
       </tr>
       <tbody id="inputFieldTable">
         <tr>
@@ -45,16 +52,11 @@
           <td>$58,000</td>
           <td><button class="deleteButton">Delete</button></td>
         </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
       </tbody>
     </table>
-    <h4>Total Monthly:<span id="totalMath"></span></h4>
+    <div class="totalMonthly">
+      <h4>Total Monthly:<span id="totalMath"></span></h4>
+    </div>
+  </div>
   </body>
 </html>

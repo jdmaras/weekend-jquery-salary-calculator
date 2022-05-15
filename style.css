@@ -1,3 +1,59 @@
+* {
+    font-family: 'Red Hat Display', Arial, sans-serif;
+}
+.wholePageBox{
+    width: 820px;
+    height: 840px;
+}
 .overLimitRed {
     background-color: red;
+}
+.topHeader{
+    text-align: center;
+    background-color: grey;
+    color: white;
+    margin-top: 30px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+.topRowHeader {
+    background-color: grey;
+}
+
+th, tr {
+    border: 1px solid;
+}
+th {
+    background-color: grey;
+}
+.salaryCalculatorTable {
+    width: 90%;
+    border: 1px solid;
+}
+
+.employeeHeader{
+    margin-top: 50px;
+}
+
+.totalMonthly {
+float:right;
+}
+
+.deleteButton {
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* .inputFieldBox {
+    display:flex;
+    gap: 5px;
+} */
+
+#submitButton{
+    padding-left: 15px;
+    padding-right: 15px;
+    float: right;
+    margin: 5px;
+    border-radius: 5px;
 }
