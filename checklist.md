@@ -10,8 +10,10 @@
 
 [ ]- If monthly costs exceed 20k, add a red background color
 
-[ ] - Delete button that removes an employee from Dom
+[x] - Delete button that removes an employee from Dom
 (Does Not need to remove employee's salary from reported total)
+
+[ ] - Base Styling
 
 -------------- STRETCH ------------------
 

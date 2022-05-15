@@ -5,6 +5,7 @@ let initalAmount = 138000;
 function onReady() {
   $(document).on("click", "#submitButton", submitInputField);
   $(document).on(`click`, `.deleteButton`, clickOnDelete);
+  $(document).on(`click`, turnRowRed);
 }
 function submitInputField() {
   let firstNameInput = $(`#firstName`).val();
@@ -41,9 +42,15 @@ function clickOnDelete() {
   console.log(`Is Delete Button Connected?`);
   $(this).parents(`tr`).remove();
 }
+function turnRowRed() {
+  if (individualSalaryTotal > Number(20000)) {
+    $(this).parents(`h4`).css(`background`, `red`);
+  }
+}
+let individualSalaryTotal;
 
 function annualSalaryAdder() {
-  let individualSalaryTotal = $(`#annualSalary`).val();
+  individualSalaryTotal = $(`#annualSalary`).val();
   initalAmount += Number(individualSalaryTotal);
   //Why must I put Number in front and why isn't it green?
   $(`#totalMath`).append((initalAmount / 12).toFixed(2));
