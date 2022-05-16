@@ -22,3 +22,11 @@
 [ ] - Once employee deleted, update TOTAL MONTHLY COST section to reflect removal. consider using `.text` as a getter or look at `data()` - IT'S TRICKY
 
 [ ] -
+
+------------- NOTES FROM DANE LIVE SOLVE --------
+
+semantic elements - so you don't have to do div class on everything. this is an html 5 feature
+
+<header>
+<main>
+<section>

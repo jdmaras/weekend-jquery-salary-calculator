@@ -18,6 +18,7 @@ function submitInputField() {
   console.log(`Title: `, titleInput);
   let annualSalaryInput = $(`#annualSalary`).val();
   console.log(`Annual Salary: `, annualSalaryInput);
+
   $(`.salaryCalculatorTable`).append(`
         <tr>
             <td>${firstNameInput}</td>
@@ -28,7 +29,7 @@ function submitInputField() {
             <td><button class="deleteButton">Delete</button></td>
         </tr>
     `);
-
+  // This append takes all of my inputs and appends an entire table row with the table data
   annualSalaryAdder();
 
   $(`#firstName`).val(``);
