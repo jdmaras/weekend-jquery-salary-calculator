@@ -3,7 +3,7 @@ $(document).ready(onReady);
 let initalAmount = 138000;
 
 function onReady() {
-  $(document).on("click", "#submitButton", submitInputField);
+  $(document).on(`click`, `#submitButton`, submitInputField);
   $(document).on(`click`, `.deleteButton`, clickOnDelete);
 }
 function submitInputField() {
@@ -41,6 +41,8 @@ function submitInputField() {
 function clickOnDelete() {
   console.log(`Is Delete Button Connected?`);
   $(this).parents(`tr`).remove();
+  //this is dom traverse. you're removing the entire table data and it's cell and then selects the parents which is the <tr>
+  //
 }
 
 function annualSalaryAdder() {
