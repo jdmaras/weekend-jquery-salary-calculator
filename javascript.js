@@ -1,6 +1,6 @@
 $(document).ready(onReady);
 
-let initalAmount = 138000;
+let initalAmount = 0;
 
 function onReady() {
   $(document).on(`click`, `#submitButton`, submitInputField);
@@ -27,7 +27,7 @@ function submitInputField() {
             <td>${titleInput}</td>
             <td>${annualSalaryInput}</td>
             <td><button class="deleteButton">Delete</button></td>
-        </tr>
+        </tr><
     `);
   // This append takes all of my inputs and appends an entire table row with the table data
   annualSalaryAdder();
