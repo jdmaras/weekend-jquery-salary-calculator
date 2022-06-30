@@ -1,9 +1,14 @@
-# Project Name
+# jQuery Salary Calculator
 
-[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
+
 
 ## Description
 
-Your project description goes here. What problem did you solve? How did you solve it?
+This was our first weekend project at PRIME and it had us working pimarily in jQuery. This was a calculator that did all the math on the server and then we used axios to send it back over to append on the DOM. The calculator was my first time really getting descriptive with naming my variables since I hadn't really discovered leaving myself comments in the code for what a function was doing. 
 
-Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
+
+
+ Language used 
+ - JavaScript
+ - jQuery 
+
